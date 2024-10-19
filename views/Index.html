@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="café entre amigos">
+
+    <link rel="Preload" href="/public/css/styles.css" as="style">
+    <link rel="stylesheet" href="/public/css/styles.css">
+
+    <link rel="Preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+    <link rel="Preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Café entre amigos</title>
+    <link rel="shortcut icon" href="/public/img/icon.ico">
+</head>
+<body>
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra"> 
+
+                <a class="logo" href="index.html">
+                    <img src="/public/img/logo-long.png" alt="Logo FullStack Blog" class="logo__imagen">
+                </a>
+
+                <nav class="navegacion"> 
+                    <a href="catalogo.html" class="navegacion__enlace">Catálogo</a>
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Recuerdos que nos unen</h2>
+            <p class="no-margin">Un lugar para compartir momentos inolvidables</p>
+        </div>
+    </header>
+
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>¡Bienvenidos a Café entre Amigos!</h3>
+            <article class="post">
+                <div class="post__imagen">
+                    <picture>
+                        <img loading="lazy" src="/public/img/cafe-sillon.png" alt="imagen blog">
+                    </picture>
+                </div>
+                <div class="post__contenido">
+                    <h4 class="no-margin">Visita nuestro catálogo de productos</h4>
+                    <p>Descubre nuestras delicias, desde café recién hecho hasta pasteles caseros.</p>
+                    <p>Cada taza cuenta una historia.</p>
+                    <a class="buton buton--primario" href="catalogo.html">Ver catálogo</a>
+                </div>
+                <hr class="hr">
+            </article>
+
+            <article class="post">
+                <div class="post">
+                    <picture>
+                        <img loading="lazy" src="/public/img/productos-destacados.png" alt="imagen blog">
+                    </picture>
+                </div>
+                <div class="post__contenido">
+                    <h4 class="no-margin">Productos destacados</h4>
+                    <div class="producto">
+                        <img src="/public/img/cafe-especialidad.jpg" alt="Café Especial" />
+                        <p>Café de origen único, tostado a la perfección.</p>
+                    </div>
+                    <div class="producto">
+                        <img src="/public/img/pastel-chocolate.jpg" alt="Pastel de Chocolate" />
+                        <p>Delicioso pastel de chocolate, el favorito de nuestros clientes.</p>
+                        <a class="buton buton--primario" href="catalogo.html">Ver más</a>
+                    </div>
+                </div>
+                <hr class="hr">
+            </article>
+
+        </main>
+
+        <aside class="sidebar">
+            <h3>Nuestros clientes dicen..</h3>
+
+            <ul class="cursos no-padding">
+                <li class="curso-side">
+    <blockquote>
+        <p>"El mejor café de La Rioja, ¡y la atención es excepcional!"</p>
+        <cite>- Juan Pérez</cite>
+    </blockquote>
+    <hr class="hr">
+    <blockquote>
+        <p>"Siempre vengo por el pastel de chocolate, es irresistible."</p>
+        <cite>- Ana García</cite>
+    </blockquote> 
+                    <a class="buton buton-calificanos" href="https://forms.gle/cpbJ5FJd5ewELV7Y9">calificanos</a>
+                </li>
+                <li class="curso-side">
+                    <h4 class="no-margin">Menú del día</h4>
+                    <h5>OPCIÓN 1</h5>
+                    <p>Tostadas de pan a elección con mix de semillas, queso untable, mermelada casera, yogur natural con granola y ensalada de frutas</p>
+                    <a class="buton buton--secundario" href="/views/detalle-producto/detalle-opcion1.html">lee más</a>
+                </li>
+                <li class="curso-side">
+                    <h4 class="no-margin">Próximos eventos</h4>
+                    <p>¡Aprendé a preparar el mejor café en casa!</p>
+                    <p class="widget-curso__label">Fecha de inicio:
+                        <span class="widget-curso__info">¡Próximamente!</span>
+                    </p>
+                    <p class="widget-curso__label">Cupos disponibles:
+                        <span class="widget-curso__info">8</span>
+                    </p>
+                    
+                    <a class="buton buton--secundario">Inscríbete aquí</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <footer class="footer">
+            <div class="contenedor">
+                <div class="barra barra-inferior"> 
+
+                    <a class="logo" href="index.html">
+                        <img src="/public/img/logo-long.png" alt="logo" class="logo__footer">
+                    </a>
+
+                    <nav class="navegacion"> 
+                        <a href="catalogo.html" class="navegacion__enlace">Catálogo</a>
+                        <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                        <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                    </nav>
+                </div>
+            </div>
+    </footer>
+    <script src="js/modernizr.js"></script>
+</body>
+</html>
